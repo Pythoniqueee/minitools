@@ -99,6 +99,7 @@ class PDFMergerApp(QWidget):
             # 弹出错误对话框
             QMessageBox.critical(self, "错误", f"合并 PDF 失败：\n{str(e)}")
 
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = PDFMergerApp()
