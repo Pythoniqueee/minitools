@@ -9,6 +9,7 @@ iso_image = ["iso", "ISO", "img", "IMG"]
 soft_etx = ["exe", "msi"]
 comp_etx = ["rar", "zip"]
 
+
 def move_file():
     folder_path = easygui.diropenbox("Please select your source path: ")
     dst_path = easygui.diropenbox("Please select your destination path: ")
@@ -23,6 +24,22 @@ def move_file():
                 shutil.move(os.path.join(folder_path, file), os.path.join(dst_path))
     except Exception as e:
         print(e)
+
+
+def move_music():
+    pass
+
+
+def move_pictures():
+    pass
+
+
+def move_images():
+    pass
+
+
+def move_softwares():
+    pass
 
 
 if __name__ == '__main__':
